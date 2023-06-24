@@ -1,8 +1,8 @@
 :root {
     --main-color: #0056fe;
-  }
+}
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,7 +11,98 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     min-height: 100vh;
     width: 100%;
 }
+/*************************************** NAVBAR-CSS ****************************************************/
+.navbar {
+    background: radial-gradient(circle, rgba(0, 202, 255, 1) 35%, rgba(0, 86, 240, 1) 100%);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.navbar-brand,
+.offcanvas-header {
+    color: white !important;
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.nav-link {
+    color: white !important;
+    transition: transform 0.3s ease-in-out;
+}
+.nav-link:hover
+{
+    transform: scale(1.05);
+}
+.navbar-toggler {
+    color: white;
+    border: none;
+}
+
+.offcanvas {
+    background: radial-gradient(circle, rgba(0, 202, 255, 1) 35%, rgba(0, 86, 240, 1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.btn-header{
+    background: none;
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+.btn-header:hover{
+    transform: scale(1.2);
+}
+.dropdown-item {
+    color: #0056fe !important;
+    transition: transform 0.3s ease-in-out;
+}
+.dropdown-item:hover{
+    color: #003295 !important;
+    transform: scale(1.05);
+    background: none;
+}
+
+.btn {
+    color: black;
+}
+
+.btn:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: white;
+    color: #0056fe;
+    border: 1px solid white;
+}
+/*************************************** ABOUT-CSS ****************************************************/
+.about{
+    text-align: center;
+    color: #002a7e;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+}
+.parag{
+    text-align: center;
+    color: #002a7e;
+}
+.resim{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.flip{
+    width: 100%;
+}
+/*******************************************************************************************************/
