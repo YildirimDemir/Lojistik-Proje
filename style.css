@@ -1,3 +1,7 @@
+:root {
+    --main-color: #0056fe;
+  }
+
 *{
     margin: 0;
     padding: 0;
