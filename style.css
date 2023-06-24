@@ -11,3 +11,313 @@ body{
     min-height: 100vh;
     width: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tracking{
+    width: 100%;
+    height: 90vh;
+    background: url(img-shipping-types/logistics-content-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+}
+
+.tracking form{
+    width: 50%;
+    height: 50%;
+    background: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+form h2{
+    color: #0055ff;
+}
+
+form .track-content select{
+    margin: auto;
+    margin-right: 5px;
+    width: 50%;
+    transition: .4s;
+    border: none;
+    outline: none;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    gap: 4px;
+}
+
+form .track-content button{
+    width: 50%;
+    height: 35px;
+    margin: auto;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    background: #fff;
+    transition: .4s;
+}
+
+form button:hover{
+    background: #83aef2;
+}
+
+.shipping-types{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    /* background: linear-gradient(135deg, #9fe9ff, #abffeb); */
+    background-size: 150% 150%;
+    animation: bg 3s ease-in-out infinite;
+  }
+  @keyframes bg{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 50% 100%;}
+    100%{background-position: 0% 50%;}
+  } 
+   
+  .shipping-types h1{
+    color: #0056fe;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .shipping-types .shipping-type{
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    backdrop-filter: blur(5px);
+    background: rgb(255, 255, 255, 0.3);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.shipping-types .shipping-type:hover{
+    transform: scale(1.02);
+}
+  
+  .shipping-types .shipping-type .box{
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .box h3{
+    color: #0056fe;
+    font-size: 2rem;
+  }
+  .box p{
+    font-size: 17px;
+  }
+  .box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  @media (max-width: 350px){
+    .shipping-types h1{
+        font-size: 1.7rem;
+    }
+    .box h3{
+      font-size: .8rem;
+    }
+    .box p{
+      font-size: 12px;
+    }
+    .box img{
+       display: none;
+      }
+  }
+
+  @media (max-width: 576px){
+    
+    .input-group-text{
+        height: 58px;
+    }
+    .form-floating input{
+        height: 60px;
+    }
+    .form-floating label{
+        font-size: .8rem;
+        margin-top: 3px;
+    }
+
+    .tracking  form{
+        padding: 10px;
+    }
+    form h2{
+        font-size: 1.4rem;
+    }
+   form .track-content{
+    display: flex;
+    flex-direction: column;
+    }
+    form .track-content select{
+        margin: auto;
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: .8rem;
+        margin-right: 0px;
+    }
+    
+    form .track-content button{
+        width: 100%;
+        font-size: .8rem;
+        margin-left: 0px;
+    }
+  }
+
+
+  @media (max-width:768px){
+    .shipping-types h1{
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    .shipping-type{
+      flex-direction: column;
+      padding: 40px;
+    }
+    .box h3{
+      font-size: 1.7rem;
+    }
+    .box p{
+      font-size: 14px;
+    }
+    .box img{
+        width: 80%;
+        border-radius: 20px;
+      }
+  }
+
+  @media (max-width: 956px){
+    .tracking form{
+        width: 90%;
+    }
+
+
+    form .track-content select{
+        font-size: .8rem;
+    }
+  }
