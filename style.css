@@ -14,6 +14,7 @@
 body{
     min-height: 100vh;
     width: 100%;
+    background-color: antiquewhite;
 }
 
 .login {
@@ -22,14 +23,20 @@ body{
     flex-direction: column;
     width: 400px;
     margin-left: auto;
-    margin-right: auto  ;
-    background-color: #0056fe;
+    margin-right: auto;
     height: fit-content;
-
+}
+.gol {
+    width: 30px;
+    margin-right: 10px;
 }
 .text {
-    justify-content: center;
-    
+    justify-content: center;   
+}
+.text h2 {
+    font-weight: 600;
+    color:#000000a1;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .box {
     display: flex;
@@ -41,6 +48,137 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.ep {
+    padding: 8px;
+    width: 270px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.596);
+    margin-bottom: 10px;
+    transition: all 300ms;
+}
+.ep:focus {
+    border: 1px solid rgba(0, 0, 0, 0.596);
+    width: 290px;
+}
+.checkbox {
+    height: fit-content;
+    float: left;
+    margin-right: auto;
+}
+.checkbox p {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #000000a8;
+}
+.signin {
+    background-color: rgb(241, 241, 241);
+    padding: 8px;
+    width: 180px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+}
+.bottom-t {
+    text-align: center;
+    font-size: 13px;
+    width: 300px;
+    color: rgba(0, 0, 0, 0.692);
+}
+.p1 {
+    margin-bottom: 20px;
+}
+.p2 {
+    color: rgba(0, 0, 0, 0.308);
+}
 .google {
     justify-content: center;
+    margin-bottom: 15px;
+}
+.google button {
+    padding: 8px;
+    width: 270px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    border: transparent;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(5px);
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.lists h3 {
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 19px;
+}
+.lists li {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 13px;
+    transition: all 300ms;
+}
+.lists li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.548);
+    font-size: 13px;
+    transition: all 300ms;
+}
+.lists li strong {
+    color: rgba(0, 0, 0, 0.836);
+}
+.lists li a:hover{
+    text-decoration: underline;
+}
+.cr {
+    font-size: 13px;
+    margin-bottom: 3px;
+    text-align: center;
+    color: #95b1e9;
+}
+.cr a {
+    color: gray;
+    text-decoration: none;
+}
+.is li {
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+.is i {
+    scale: 1.3;
+    width: 30px;
+}
+footer h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+}
+.contacttext {
+    align-items: center;
+    height: 50px;
+}
+.contact input {
+    padding: 10px;
+    width: 270px;
+    border: 1px solid black;
+    border-right: transparent;
+    border-radius: 5px 0 0 5px;
+    transition: all 300ms;
+    background-color: rgba(201, 204, 235, 0.267);
+    color: white;
+}
+.contact input:focus {
+    width: 300px;
+}
+.contact button {
+    padding: 10px;
+    width: 130px;
+    border: 1px solid black;
+    border-left: transparent;
+    border-radius: 0 5px 5px 0;
+    background-color: #e2e6f0;
 }
